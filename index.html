@@ -39,7 +39,7 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 	
-	const canvas = document.getElementById("a");
+	const canvas = document.getElementById("myCanvas");
 	
 	function drawRect() {
 		var rectangle = document.getElementById("r");
@@ -81,7 +81,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
     z-index: 1;
 }
 	
-	<canvas id= "a" width="300" height="225"></canvas>;
+	<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
 </style>
 
 <body>
@@ -95,8 +95,8 @@ console.log("This file last modified " + docMod); // generates message in javaSc
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
-	<canvas id= "a"></Canvas>
-	<br/>
+	<canvas id= "myCanvas"></Canvas>
+	
 		<button onclick="drawRect()">Draw Rectangle</button>
 		<button onclick="addName()">Add Name</button>
 		<button onclick="loadImage()">Load Image</button>
