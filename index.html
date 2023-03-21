@@ -87,22 +87,22 @@ canvas {
       	const ctx = canvas.getContext('2d');
 	
 	function drawRect(){			//draws a black triangle that starts at x=50, y=50 and is 100 wide and 125 tall
-		ctx.fillStyle = 'black';
-        	ctx.fillRect(50, 75, 100, 125);
+		ctx.fillStyle = 'black';	//fill rectangle in black
+        	ctx.fillRect(50, 75, 100, 125); //rectangle positiom
         }
 	
 	function writeName(){			// writes Ansh Patel in bold Arial in orange
-		ctx.fillStyle = 'orange';
-		ctx.font = 'bold 20px Arial';
-		ctx.fillText('Ansh Patel', 200, 300);
+		ctx.fillStyle = 'orange';	// text color
+		ctx.font = 'bold 20px Arial';	// font and size
+		ctx.fillText('Ansh Patel', 200, 300); //name and postion 
 	}
 	
 	function loadImg() {			// loads DIY Diagnostics logo onto canvas
         	const img = new Image();
         	img.onload = function() {
-          		ctx.drawImage(img, 400, 300);
+          		ctx.drawImage(img, 400, 300); //image position
         	};
-        	img.src = "DIYLogo.jpeg"
+        	img.src = "DIYLogo.jpeg"	//image sourced from DIYLogo.jpeg file in repository
       	}
 	//the function for displaying image on canvas is from ChatGTP
 	
