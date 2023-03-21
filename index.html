@@ -81,8 +81,8 @@ canvas {
 	<button onclick="clear()">Clear Canvas</button>
 
 <script>
-	 const canvas = document.getElementById('myCanvas');
-      	 const ctx = canvas.getContext('2d');
+	const canvas = document.getElementById('myCanvas');
+      	const ctx = canvas.getContext('2d');
 	
 	function drawRect(){
 		ctx.fillStyle = 'black';
@@ -105,7 +105,7 @@ canvas {
 	//the function for displaying image on canvas is from ChatGTP
 	
 	function clear(){
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		ctx.clearRect(0, 0, 800, 500);
 	}
 		
 </script>
