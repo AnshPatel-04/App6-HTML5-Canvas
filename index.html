@@ -81,12 +81,20 @@ canvas {
 	<button onclick="clear()">Clear Canvas</button>
 
 <script>
-	var myCanvas = document.getElementById("a");
+	 const canvas = document.getElementById('myCanvas');
+      	 const ctx = canvas.getContext('2d');
 	
 	function drawRect(){
 		ctx.fillStyle = 'black';
         	ctx.fillRect(50, 50, 100, 100);
         }
+	
+	function writeName(){
+		ctx.fillStyle = 'black';
+		ctx.font = 'bold 20px Arial';
+		ctx.fillText('Ansh Patel', 50, 200);
+	}
+		
 </script>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
