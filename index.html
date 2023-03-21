@@ -95,6 +95,15 @@ canvas {
 		ctx.fillText('Ansh Patel', 70, 200);
 	}
 	
+	function loadImg() {
+        	const img = new Image();
+        	img.onload = function() {
+          	ctx.drawImage(img, 0, 0, 300, 300);
+        	};
+        	img.src = "DIYLogo.jpeg"
+      	}
+	//the function for displaying image on canvas is from ChatGTP
+	
 	function clear(){
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 	}
