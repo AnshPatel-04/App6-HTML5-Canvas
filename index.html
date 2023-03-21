@@ -1,4 +1,4 @@
-ctx.fillStyle = "red";<!DOCTYPE html> 
+<!DOCTYPE html> 
 <html> 
 <!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
  
@@ -78,7 +78,7 @@ canvas {
 	<button onclick="drawRect()">Draw Rectangle</button>
 	<button onclick="writeName()">Write my Name</button>
 	<button onclick="loadImg()">Show Image</button>
-	<button onclick="clear()">Clear Canvas</button>
+	<button onclick="clearCanvas()">Clear Canvas</button>
 
 <script>
 	const canvas = document.getElementById('myCanvas');
@@ -104,11 +104,10 @@ canvas {
       	}
 	//the function for displaying image on canvas is from ChatGTP
 	
-	function clear(){
+	function clearCanvas(){
 		var c = document.getElementById("myCanvas");
 		var ctx = c.getContext("2d");
-		ctx.fillStyle = "white";
-		ctx.fillRect(0, 0, 800, 500);
+		ctx.clearRect(0, 0, 800, 500);
 	}
 		
 </script>
