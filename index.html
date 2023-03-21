@@ -90,7 +90,7 @@ canvas {
         }
 	
 	function writeName(){
-		ctx.fillStyle = 'black';
+		ctx.fillStyle = 'orange';
 		ctx.font = 'bold 20px Arial';
 		ctx.fillText('Ansh Patel', 200, 300);
 	}
@@ -98,14 +98,14 @@ canvas {
 	function loadImg() {
         	const img = new Image();
         	img.onload = function() {
-          	ctx.drawImage(img, 0, 0, 700, 300);
+          		ctx.drawImage(img, 400, 300);
         	};
         	img.src = "DIYLogo.jpeg"
       	}
 	//the function for displaying image on canvas is from ChatGTP
 	
 	function clear(){
-		ctx.clearRect(0, 0, 800, 500);
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
 	}
 		
 </script>
